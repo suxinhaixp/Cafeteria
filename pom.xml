@@ -15,6 +15,12 @@
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
+
+            <thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>
+            <!-- 布局功能的支持程序  thymeleaf3主程序  layout2以上版本 -->
+            <!-- thymeleaf2   layout1-->
+            <thymeleaf-layout-dialect.version>2.2.2</thymeleaf-layout-dialect.version>
+
     </properties>
     <dependencies>
         <dependency>
@@ -43,6 +49,7 @@
             <version>5.3.1.Final</version>
             <type>pom</type>
         </dependency>
+        <!--引入模版引擎-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -66,6 +73,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
+        <!--webjars-->
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>jquery</artifactId>
+            <version>3.3.1</version>
+        </dependency>
+
+
     </dependencies>
     <build>
         <plugins>
